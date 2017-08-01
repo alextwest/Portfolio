@@ -65,12 +65,17 @@
     </body>
     
     <script>
-  let ref = document.getElementById("reflections").style.visibility="hidden";
 
-    function myFunction(){
-    
-      document.getElementById("reflections").style.visibility="visible";
+     function myFunction() {
+    var x = document.getElementById('reflections');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } 
+    else {
+         x.style.display = 'none';
     }
+
+}
     
     </script>
 
